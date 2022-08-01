@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>franchise</title>
+    <link type="text/css" rel="stylesheet" href="basic_form.css">
+    <style>
+        p {text-align: center;}
+        .layout{ max-width: 100%; margin: 0 auto;}
+        .qna{ list-style: none; margin: 0; padding: 0;}
+        .qna li{ padding: 10px 0;  border-top: 1px dashed darkgray;}
+        .qna input { display: none;}
+        .qna label { font-weight: bold; color:black;  margin: 20px 0 0; }
+        .qna label::before { display: block; content: ""; width: 0; height: 0;
+        border: 8px solid transparent; border-left: 8px solid peru; margin: 2px 0 0 8px; float: left;}
+        .qna input:checked + label::before {  border: 8px solid transparent; border-top: 8px solid peru; border-bottom: 0; margin: 8px 4px 0;}
+        .qna div { display: none; color:darkgray; font-size: 15px; overflow: hidden;}
+        .qna input:checked + label + div { display: flex; margin-left: 27%; }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div class="top_line" style="text-align: right;">
+        <a href="loginpage.html">로그인&ensp;</a>
+        <a>회원가입&ensp;</a>
+        <a>주문내역&ensp;</a>
+        <a>마이페이지&ensp;</a>
+        <a>장바구니&emsp;&ensp;</a>
+    </div>
+    <center>
+    <h1 style="font-size: 200; color:saddlebrown;">JW_BACKERY</h1><br>
+        <nav role="navigation">
+            <ul id="main-menu">
+                <li><a href="Backery.html">BACKERY</a></li>
+        
+                <li><a href="#">&emsp;&nbsp;CAFE</a>
+                    <ul id="sub-menu" style="z-index: 2;">
+                        <li><a href="coffee.html">COFFEE</a></li>
+                        <li><a href="non-coffee.html">NON-COFFEE</a></li>
+                        <li><a href="beverage.html">BEVERAGE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">&emsp;&nbsp;STORE&ensp;</a></li>
+                <li><a href="store.html">FRANCHISE</a>
+                    <ul id="sub-menu" style="z-index: 2;">
+                        <li><a href="franchise.html">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+        <hr size="2px" noshade color="gray">
+
+        <h2>자주 묻는 질문</h2>
+        <p>창업과 관련해 고객님들께서 자주 물으시는 질문입니다.</p>
+        <hr>
+        <div class="layout">
+            <ul class="qna">
+                <li>
+                    <input type="checkbox" id="qna-1">
+                    <label for="qna-1">JW_BACKERY 창업의 장점은 무엇인가요?</label>
+                    <div>
+                        <p>다양한 베이커리 및 카페가 무수히 많아지며 일상생활에서 베이커리와 카페를 쉽고 흔하게 접하게 되었습니다.<br>
+                            JW_BACKERY는 빵은 맛있으나 건강하지 않다는 고정관념 깨고 '개인 맞춤형 면역 케어 플랫폼'이라는 <br>
+                            브랜드 컨셉 하에 런칭 된, JW 라이프스 타일의 첫 번째 프렌차이즈 브랜드입니다.<br>
+                            바이오 기업의 기술력을 접목 시킨 프리미엄 면역빵으로 면역력을 중요시하는 <br>
+                            '위드 코로나' 시대에 꾸준히 매출이 오르는 사업이며 마진율이 좋아 운영하시는 점주분들 또한 만족도가 높습니다.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" id="qna-2">
+                    <label for="qna-2">가맹점 오픈까지 소요되는 시간이 어떻게 되나요?</label>
+                    <div>
+                        <p>가맹 계약 이후 매장 오픈까지는 1~3개월 정도 소요됩니다.<br>
+                            상권 분석 및 점포 선정, 도면 협의에 소요되는 시간의 차이가 소요 시간에 가장 큰 영향을 주고 있습니다.<br> 
+                            *가맹 계약 이후 오픈까지 소요되는 기간 동안 인/허가 추진, 인테리어 공사, 본사 교육 등이 진행됩니다.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" id="qna-3">
+                    <label for="qna-3">매장 운영 시 구인은 어떻게 진행되며, 필요한 직원 수는 어떻게 되나요?</label>
+                    <div>
+                        <p>가맹점주가 구인구직사이트 등을 통해 직접 구인을 해야 하며,<br>
+                            필요 직원 수는 가맹점의 매출액, 영업시간 등에 따라 달라집니다.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" id="qna-4">
+                    <label for="qna-4">식자재 공급 및 배송은 어떻게 이루어지나요?</label>
+                    <div>
+                        <p>사업의 통일성 유지를 위해 가맹 본부에서 지정한 업체와 거래하도록 가맹 계약서에 명시하고 있습니다.<br>
+                            JW_BACKERY 카페에서 운영하고 있는 물류 센터 및 가맹 본부에서 지정한 업체를 통해 공급이 이루어집니다.<br>
+                           *단, 계절 과일 등은 별도 구매
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" id="qna-5">
+                    <label for="qna-5">교육 일정은 어떻게 되며, 제과 제빵 관련 기술이 없어도 가맹점 개설이 가능한가요?</label>
+                    <div>
+                        <p>
+                            가맹점주는 가맹 계약 체결 후 본사 교육 일정에 따라 가맹점주 교육을 이수해야 합니다.<br>
+                            본사는 가맹점 운영에 필요한 제조, 운영, 서비스 및 현장 실습 등을 포함하여 3일간 교육해드립니다.<br>
+                            베이커리 메뉴는 본사에서 제공해 드리기 때문에 제과, 제빵 기술이나 자격증 없이도 가맹점 개설 및 운영이 가능합니다.
+                        </p>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </center>
+
+</body>
+</html>

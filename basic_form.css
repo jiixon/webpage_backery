@@ -1,0 +1,28 @@
+    @font-face {
+        font-family: MaruBuri;
+        src: url(MaruBuriTTF/MaruBuri-SemiBold.ttf);
+    }
+    body { background-color:linen; margin: 0; padding: 0; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    h1 {text-align: center;}
+    h1 a {font-size: 200; color:saddlebrown; text-decoration-line: none;}
+    .top_line a {text-decoration-line: none; font-family:MaruBuri; color: black; font-size: 15px;}
+    .top_line a:hover {color:gray;}
+
+
+    nav{width: 100%;display: flex;position: relative;justify-content: center;}
+    ul, li{ margin: 0; padding: 0; list-style: none;}
+    #main-menu > li { float: left; position: relative;}
+    #main-menu > li > a {
+        text-align: center;text-decoration: none; display: block; padding: 14px 25px; font-weight: bold; color:black;}
+    #main-menu li a:hover { color:peru; }
+    #sub-menu { position: absolute; background:wheat; visibility: hidden; transition: all 0.15s ease-in;}
+    #sub-menu > li { padding: 16px 28px; }
+    #sub-menu > li >  a { font-weight: bold; font-size: 14px; color:ivory ; text-decoration: none;}
+
+    #main-menu > li:hover #sub-menu {
+        visibility: visible;
+    }
+    #sub-menu > li >  a:hover {
+        text-decoration: none;
+        color: peru;
+    }

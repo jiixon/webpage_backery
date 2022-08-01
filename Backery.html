@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backery</title>
+    <link type="text/css" rel="stylesheet" href="basic_form.css">
+</head>
+<style>
+    .product{
+        display: block;
+        width: 225px;
+        text-align: center;
+        text-decoration:none;
+        color: black;
+        float:left;
+        margin-top: 50px;
+        margin-left: 90px;
+        margin-right: 60px;
+        margin-bottom: 30px;
+    }
+
+    .product-name{
+        margin-top: 20px;
+        margin-bottom: 4px;
+    }
+
+</style>
+
+<body>
+    <br>
+    <div class="top_line" style="text-align: right;">
+        <a href="loginpage.html">로그인&ensp;</a>
+        <a>회원가입&ensp;</a>
+        <a>주문내역&ensp;</a>
+        <a>마이페이지&ensp;</a>
+        <a>장바구니&emsp;&ensp;</a>
+    </div>
+    <center>
+    <h1 style="font-size: 200; color:saddlebrown;"><a href="Project.html">JW_BACKERY</a></h1><br>
+        <nav role="navigation">
+            <ul id="main-menu">
+                <li><a href="Backery.html">BACKERY</a></li>
+        
+                <li><a href="#">&emsp;&nbsp;CAFE</a>
+                    <ul id="sub-menu" style="z-index: 2;">
+                        <li><a href="coffee.html">COFFEE</a></li>
+                        <li><a href="non-coffee.html">NON-COFFEE</a></li>
+                    </ul>
+                </li>
+                <li><a href="store.html">&emsp;&nbsp;STORE&ensp;</a></li>
+                <li><a href="#">FRANCHISE</a>
+                    <ul id="sub-menu" style="z-index: 2;">
+                        <li><a href="franchise.html">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <hr size="2px" noshade color="gray">
+
+        <!--빵메뉴들-->
+        <a href="#" class="product">
+            <img src="media/bread1.JPG" alt="bread1" width="250" height="285px"
+            onmouseenter="zoomin(event)" onmouseleave="zoomout(event)">
+            <div class="product-name">
+                [신메뉴]브라우니 3종
+            </div>
+            <div class="product-price">
+                5,000원
+            </div>
+        </a>
+
+        
+        <a href="#" class="product">
+            <img src="media/bread2.JPG" alt="bread2"  width="250" height="285px"
+            onmouseenter="zoomin(event)" onmouseleave="zoomout(event)">
+            <div class="product-name">
+                (무료배송)브라운쌀빵
+            </div>
+            <div class="product-price">
+                4,500원
+            </div>
+        </a>
+
+        
+        <a href="#" class="product">
+            <img src="media/bread3.JPG"  width="250" height="285px"
+            onmouseenter="zoomin(event)" onmouseleave="zoomout(event)">
+            <div class="product-name">
+                수제 단호박케이크(미니/롤)
+            </div>
+            <div class="product-price">
+                8,500
+            </div>
+        </a>
+
+        
+        <a href="#" class="product">
+            <img src="media/bread4.JPG"  width="250" height="285px"
+            onmouseenter="zoomin(event)" onmouseleave="zoomout(event)">
+            <div class="product-name">
+                큐브쌀식빵 4종
+            </div>
+            <div class="product-price">
+                5,600원
+            </div>
+        </a>
+
+        
+        <a href="#" class="product">
+            <img src="media/bread5.JPG" width="250" height="285px"
+            onmouseenter="zoomin(event)" onmouseleave="zoomout(event)">
+            <div class="product-name">
+                리얼초코빵
+            </div>
+            <div class="product-price">
+                4,000원
+            </div>
+        </a>
+
+        <a href="#" class="product">
+            <img src="media/bread6.JPG" width="250" height="285px"
+            onmouseenter="zoomin(event)" onmouseleave="zoomout(event)">
+            <div class="product-name">
+                흑임자 르뱅떡쿠키
+            </div>
+            <div class="product-price">
+                3,500원
+            </div>
+        </a>
+
+        <a href="#" class="product">
+            <img src="media/bread7.JPG" width="250" height="285px"
+            onmouseenter="zoomin(event)" onmouseleave="zoomout(event)">
+            <div class="product-name">
+                녹차 르뱅쿠키
+            </div>
+            <div class="product-price">
+                3,500원
+            </div>
+        </a>
+        
+        <a href="#" class="product">
+            <img src="media/bread8.JPG" width="250" height="285px"
+            onmouseenter="zoomin(event)" onmouseleave="zoomout(event)">
+            <div class="product-name">
+                황금치아바타
+            </div>
+            <div class="product-price">
+                4,500원
+            </div>
+        </a>
+
+        <script>
+            function zoomin(event) {
+              event.target.style.transform = "scale(1.2)";
+              event.target.style.zIndex = 1;
+              event.target.style.transition = "all 0.5s";
+            }
+          
+            function zoomout(event) {
+              event.target.style.transform = "scale(1)";
+              event.target.style.zIndex = 0;
+              event.target.style.transition = "all 0.5s";
+            }
+          </script>
+        
+    </center>
+    
+
+</body>
+</html>

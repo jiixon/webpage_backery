@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link type="text/css" rel="stylesheet" href="basic_form.css">
+    <style>
+        * {box-sizing: border-box;}
+        .loginform {width: 500px; height: 400px; background-color:floralwhite; border-radius: 5px;
+        margin-left: auto; margin-right: auto; margin-top: 50px; padding: 50px; font-family: MaruBuri;}
+        .login_text {font-size: 20px; width: 100%; border: none; border-radius: 5px;
+        padding: 20px; margin-bottom: 20px; font-family: MaruBuri;}
+
+        .submit_button{font-size: 20px; background-color:antiquewhite; 
+        width: 100%; padding: 20px; border: none; font-family: MaruBuri;}
+        .pass_forget{ text-decoration-line:underline; text-align: center;font-family: MaruBuri;}
+        .pass_forget a{color:darkgrey; font-size: 15px;}
+    </style>
+</head>
+<body>
+    <br>
+    <div class="top_line" style="text-align: right;">
+        <a href="loginpage.html">로그인&ensp;</a>
+        <a>회원가입&ensp;</a>
+        <a>주문내역&ensp;</a>
+        <a>마이페이지&ensp;</a>
+        <a>장바구니&emsp;&ensp;</a>
+    </div>
+
+    <h1 style="font-size: 200; color:saddlebrown;"><a href="Project.html">JW_BACKERY</a></h1><br>
+    <nav role="navigation">
+        <ul id="main-menu">
+            <li><a href="Backery.html">BACKERY</a></li>
+    
+            <li><a href="#">&emsp;&nbsp;CAFE</a>
+                <ul id="sub-menu" style="z-index: 2;">
+                    <li><a href="coffee.html">COFFEE</a></li>
+                    <li><a href="non-coffee.html">NON-COFFEE</a></li>
+                </ul>
+            </li>
+            <li><a href="store.html">&emsp;&nbsp;STORE&ensp;</a></li>
+            <li><a href="#">FRANCHISE</a>
+                <ul id="sub-menu" style="z-index: 2;">
+                    <li><a href="franchise.html">자주 묻는 질문</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <hr size="2px" noshade color="gray">
+    
+
+    <div class="loginform">
+        <form class="login_form">
+            <input type="text" id="id" class="login_text" placeholder="아이디">
+            <input type="password" id="password" name="password" class="login_text" placeholder="비밀번호">
+            <button id="login" class="submit_button">로그인</button>
+            
+        </form><br><br>
+        <div class="pass_forget">
+            <a href="#">비밀번호를 잊어버리셨나요?</a>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#login").addEventListener("click", () => {
+            const id = "gachon";
+            const password = "0000";
+ 
+            if(id == document.querySelector("#id").value) {
+                if(password == document.querySelector("#password").value) {
+                    alert("환영합니다!");
+                }
+                else {
+                    alert("비밀번호가 맞지 않습니다.");
+                }
+            }
+            else {
+                alert("아이디 혹은 비밀번호가 맞지 않습니다.");
+            }
+        });
+    </script>
+    
+</body>
+</html>
